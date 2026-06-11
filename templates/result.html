@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes Prediction Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+      margin-top: 30px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      width: 50%;
+      margin: 30px auto;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .result-box {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 25px;
+      border-radius: 10px;
+      color: white;
+      margin: 20px 0;
+    }
+
+    .positive {
+      background-color: #e53935; /* red */
+    }
+
+    .negative {
+      background-color: #2e7d32; /* green */
+    }
+
+    .confidence {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #0d47a1;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    a.button:hover {
+      background-color: #1565c0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>🩺 Diabetes Prediction Result</h1>
+
+  <div class="container">
+    <!-- Show Positive or Negative -->
+    <div class="result-box {% if prediction == 'Positive' %}positive{% else %}negative{% endif %}">
+      {% if prediction == 'Positive' %}
+        Diabetes Detected ⚠️
+      {% else %}
+        No Diabetes Detected ✅
+      {% endif %}
+    </div>
+
+    <!-- Optional Confidence -->
+    {% if confidence %}
+    <div class="confidence">
+      Prediction Confidence: {{ confidence }}%
+    </div>
+    {% endif %}
+
+    <!-- Back Button -->
+    <a href="/" class="button">Predict Again</a>
+  </div>
+
+  <div class="footer">
+    <p>Developed using Flask & Machine Learning</p>
+  </div>
+</body>
+</html>
