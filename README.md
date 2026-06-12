@@ -5,7 +5,7 @@ A Machine Learning–powered **Flask Web Application** that predicts whether a p
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This system uses a **symptom-based approach** to predict diabetes.  
 Users enter basic symptoms through a web interface, and the trained ML model provides an instant prediction.
@@ -37,7 +37,7 @@ Users enter basic symptoms through a web interface, and the trained ML model pro
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python  
 - Flask  
@@ -48,7 +48,7 @@ Users enter basic symptoms through a web interface, and the trained ML model pro
 
 ---
 
-## 🚀 Application Workflow
+##  Application Workflow
 
 1. User enters symptoms in the web form  
 2. Input data is processed and sent to the ML model  
