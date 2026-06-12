@@ -18,8 +18,7 @@ Users enter basic symptoms through a web interface, and the trained ML model pro
 - Sudden weight loss  
 - Blurred vision  
 - Increased hunger  
-- Slow healing wounds  
-- Tingling or numbness  
+- Slow healing wounds    
 
 ### Prediction Output
 
