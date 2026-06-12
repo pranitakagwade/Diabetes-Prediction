@@ -27,7 +27,7 @@ Users enter basic symptoms through a web interface, and the trained ML model pro
 
 ---
 
-## 🤖 Machine Learning Model
+##  Machine Learning Model
 
 - **Algorithm:** Random Forest Classifier  
 - **Approach:** Symptom-based classification  
